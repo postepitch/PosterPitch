@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosterPitch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #FBE9D0;
+            background: linear-gradient(135deg, #244855, #E64833);
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        .navbar {
+            background: #244855;
+            background-image: url('abc.jpg');
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #FBE9D0 !important;
+        }
+
+        .nav-link {
+            color: #FBE9D0 !important;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #E64833 !important;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+        }
+
+        .template {
+            background: linear-gradient(135deg, #874F41, #FBE9D0);
+            padding: 40px;
+            border-radius: 15px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            color: #244855;
+        }
+
+        .template:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .template {
+                margin-bottom: 20px;
+            }
+
+            .template:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Form */
+        form input,
+        form textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #874F41;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">PosterPitch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#templates">Templates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container text-center">
+        <h2 class="animated-title"> <b>Welcome to PosterPitch</b></h2>
+        <p>Transforming ideas into visually stunning posters that captivate and persuade.</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <p class="lead text-center text-lg-start">
+            At <strong>PosterPitch</strong>, we believe in the power of visual storytelling.
+            Our mission is to help businesses, creators, and individuals transform ideas into
+            stunning posters that captivate and persuade.
+        </p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-lg-start text-center">
+                <h4 class="mt-4">🔹 Who We Are</h4>
+                <p>
+                    We are a team of passionate designers and tech enthusiasts dedicated to
+                    bringing creativity to life through high-quality poster templates.
+                </p>
+                <h4 class="mt-4">💡 Why Choose PosterPitch?</h4>
+                <ul class="list-unstyled">
+                    <li>✔ <strong>Stunning Designs:</strong> Professionally crafted templates.</li>
+                    <li>✔ <strong>User-Friendly:</strong> Easy customization, no design skills required.</li>
+                    <li>✔ <strong>Variety of Templates:</strong> Business, personal, events, and more.</li>
+                    <li>✔ <strong>Seamless Experience:</strong> Smooth navigation and UI.</li>
+                    <li>✔ <strong>Dedicated Support:</strong> Always here to help!</li>
+                </ul>
+
+                <h4 class="mt-4">🎯 Our Vision</h4>
+                <p>
+                    We aim to be the <strong>go-to platform</strong> for individuals and businesses
+                    looking for beautifully designed, ready-to-use poster templates.
+                </p>
+
+                <p class="mt-4">
+                    ✨ <strong>Join us on this journey and start designing your masterpiece
+                        with PosterPitch today!</strong>
+                </p>
+                <a href="https://chat.whatsapp.com/FpMxVy6xy3jJhP4QNdORCQ"
+                    class="btn btn-success fw-bold px-4 py-2">Join Us</a>
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="templates" class="container text-center">
+        <h2>Our Templates</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="template">Template 1</div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="template">Template 2</div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="template">Template 3</div>
+            </div>
+        </div>
+        <button class="mt-4">View More</button>
+    </section>
+
+    <section id="contact" class="container text-center">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/meoeyare" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer class="text-center text-lg-start bg-dark text-white py-4">
+        <div class="container">
+            <h5>PosterPitch</h5>
+            <p>Transforming ideas into visually stunning posters.</p>
+            <p>&copy; 2025 PosterPitch. All Rights Reserved.</p>
+            <h5>Contact Us</h5>
+            <a href="mailto:posterpitch89@gmail.com" class="text-white me-3"><i
+                    class="fa fa-envelope"></i>posterpitch89@gmail.com</a>
+
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href=" https://www.linkedin.com/company/posterpitch/" class="text-white"><i
+                    class="fab fa-linkedin"></i>linkedin</a>
+
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
